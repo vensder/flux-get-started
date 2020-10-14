@@ -51,6 +51,8 @@ Your feedback is always welcome!
 
 --------------------
 
+## MicroK8s
+
 ```bash
 systemctl start snapd  
 sudo systemctl restart docker
@@ -139,4 +141,12 @@ curl 10.152.183.146:9898                                                        
   "num_goroutine": "8",
   "num_cpu": "4"
 }%                                                            
+```
+
+```bash
+kubectl port-forward podinfo-5895f977b6-d5r9j 19898:9898 --namespace=demo                                        20:32:01 
+Forwarding from 127.0.0.1:19898 -> 9898
+Forwarding from [::1]:19898 -> 9898
+
+Handling connection for 19898
 ```
