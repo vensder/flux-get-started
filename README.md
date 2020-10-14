@@ -51,7 +51,15 @@ Your feedback is always welcome!
 
 --------------------
 
-## MicroK8s
+## MicroK8s and flux
+
+### Fix the fluxctl connectivity with MicroK8s local claster
+
+```bash
+ln -s /var/snap/microk8s/current/credentials/client.config $HOME/.kube/config
+```
+
+### Get started with MicroK8s
 
 ```bash
 systemctl start snapd  
