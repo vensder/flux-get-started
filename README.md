@@ -240,3 +240,9 @@ csinodes                                       storage.k8s.io                 fa
 storageclasses                    sc           storage.k8s.io                 false        StorageClass
 volumeattachments                              storage.k8s.io                 false        VolumeAttachment
 ```
+
+### Overview deployments, services, etc.
+
+```bash
+kubectl get deploy,sts,svc,configmap,secret -n flux -o yaml 
+```
